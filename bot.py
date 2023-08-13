@@ -8,7 +8,7 @@ cfg = BotConfig(os.getenv("DOT_ENV_PATH", ".env"))
 
 bot = Bot(token=cfg.token)
 dp = Dispatcher(bot)
-mygroup = Group(cfg.telegram_group_id, "Test")
+mygroup = Group(cfg.telegram_group_id, "👉Sinfdoshlar👈")
 # Define a command handler
 @dp.message_handler(commands=['start'])
 async def start_command(message: types.Message):
