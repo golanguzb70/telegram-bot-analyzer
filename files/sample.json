@@ -1,0 +1,16 @@
+{
+    "id": 1,
+    "name": "My Group",
+    "members": [
+        {
+            "user_id":131,
+            "username": "username",
+            "messages": [
+                {
+                    "id": 232,
+                    "text": "Some text"
+                }
+            ]
+        }
+    ]
+}
