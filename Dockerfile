@@ -14,4 +14,4 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 ENV BOT_ENVIRONMENT=production
 
 # Run the bot when the container launches
-CMD ["python", "app.py"]
+CMD ["python", "bot.py"]
