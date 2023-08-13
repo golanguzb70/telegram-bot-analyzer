@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  tg_analytics_bot:
+    container_name: tg_analytics_bot
+    build: .
+    restart: unless-stopped
+    environment:
+      - DOT_ENV_PATH=.env
+    
