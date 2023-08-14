@@ -27,10 +27,8 @@ async def analytics_command(message: types.Message):
     else:
         await message.reply("Siz hozircha bu botdan foydalan olmaysiz.")
 
-@dp.message_handler(content_types=types.ContentTypes.TEXT, chat_type=types.ChatType.GROUP)
+@dp.message_handler(content_types=types.ContentTypes.TEXT, chat_type=[types.ChatType.GROUP, types.ChatType.SUPERGROUP])
 async def handle_group_message(message: types.Message):
-    print(message.chat.id)
-    # print(message)
     if message['chat']['id'] != cfg.telegram_group_id:
         return
     messageToCreate = {
